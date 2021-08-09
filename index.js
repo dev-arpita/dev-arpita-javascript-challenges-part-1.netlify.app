@@ -1,10 +1,18 @@
-let name = "Linda"
-let greeting = "Hi there"
+let myPoints = 3
 
-// Create a function that logs out "Hi there, Linda!" when called
+// Create two functions, add3Points() and remove1Point(), and have them
+// add/remove points to/from the myPoints variable
 
-function greetLinda() {
-    console.log(greeting + ", " + name + "!")
+function add3Points() {
+    myPoints +=3;
 }
-
-greetLinda()
+add3Points();
+function remove1Points() {
+    myPoints -= 1;
+}
+remove1Points();
+add3Points();
+add3Points();
+remove1Points();
+// Call the functions to that the line below logs out 10
+console.log(myPoints)
